@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div>
+            <form>
+                <input type="text" name="city" id="city" placeholder="find weather for city..." spellcheck="false" autocomplete="off">
+                <button class="submit" tabindex="0">get</button>
+            </form>
+
+            <p class="error">Data for this city is not available.<br>Enter a valid city name.</p>
+        </div>
+
+
+        <div class="cards">
+            <div class="card-1">
+                <div class="date-time">
+                    <span class="date">Jul 04, 2021</span>
+                    <strong>. . .</strong>
+                    <span class="current-time">8:01 PM</span>
+                </div>
+    
+                <div class="icon-container">
+                    <img src="./images/04n.png" class="center-icon">
+                </div>
+    
+                <p class="temperature"><strong>32</strong>&deg;</p>
+                <p class="location">California, US</p>
+    
+                <div class="spec-section">
+                    <div>
+                        <p class="spec">Pressure</p>
+                        <div><span class="value pressure">15</span>hPa</div>
+                    </div>
+                    <div>
+                        <p class="spec">Humidity</p>
+                        <div><span class="value humidity">32</span>%</div>
+                    </div>
+                    <div>
+                        <p class="spec">Wind</p>
+                        <div><span class="value wind">15</span>Km/h</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-2">
+                <strong class="dots"> . . . </strong>
+                <p class="description">Heavy Shower Rain <span class="and-with"><br>and<br></span> Drizzle</p>
+                <div class="details">
+                    <p>Cloudiness - <span class="value-2 clouds">55</span>%</p>
+                    <p>Visibility - <span class="value-2 visible">10000</span>Km</p>
+                </div>
+                <div class="spec-section">
+                    <div>
+                        <p class="spec">sunrise</p>
+                        <div><span class="value-2 sun-rise">05:45</span>am</div>
+                    </div>
+    
+                    <div class="sset">
+                        <p class="spec">sunset</p>
+                        <div><span class="value-2 sun-set">07:28</span>pm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="module" src="./script.js"></script>
+</body>
+</html>
